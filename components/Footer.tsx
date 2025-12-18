@@ -23,12 +23,12 @@ const Footer: React.FC = () => {
               />
             </Link>
             <p className="text-sm text-gray-600 mb-4">
-              1430 N 29th Ave<br />
-              Phoenix, AZ 85009
+              2048 N 16th St<br />
+              Phoenix, AZ 85006
             </p>
             <div className="text-sm text-gray-600 mb-4 space-y-1">
-              <p><a href="tel:16024151919" className="hover:text-blue-900">602-415-1919</a></p>
-              <p><a href="mailto:info@absflooring.com" className="hover:text-blue-900">info@absflooring.com</a></p>
+              <p><a href="tel:16024151919" className="hover:text-blue-900">(602) 582-5827</a></p>
+              <p><a href="mailto:flooringteamaz@gmail.com" className="hover:text-blue-900">flooringteamaz@gmail.com</a></p>
             </div>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/indianabestflooring/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-900 transition-colors"><Facebook className="w-5 h-5"/></a>
@@ -104,27 +104,27 @@ const Footer: React.FC = () => {
               <div className="pt-2 space-y-1">
                 <div className="flex justify-between">
                   <span className="font-semibold text-gray-900">Mon</span>
-                  <span>09:00 am – 05:00 pm</span>
+                  <span>7:00 am – 6:00 pm</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-semibold text-gray-900">Tue</span>
-                  <span>09:00 am – 05:00 pm</span>
+                  <span>7:00 am – 6:00 pm</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-semibold text-gray-900">Wed</span>
-                  <span>09:00 am – 05:00 pm</span>
+                  <span>7:00 am – 6:00 pm</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-semibold text-gray-900">Thu</span>
-                  <span>09:00 am – 05:00 pm</span>
+                  <span>7:00 am – 6:00 pm</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-semibold text-gray-900">Fri</span>
-                  <span>09:00 am – 05:00 pm</span>
+                  <span>7:00 am – 6:00 pm</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-semibold text-gray-900">Sat</span>
-                  <span>08:00 am – 12:00 pm</span>
+                  <span>7:00 am – 5:00 pm</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-semibold text-gray-900">Sun</span>

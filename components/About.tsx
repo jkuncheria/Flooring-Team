@@ -1,5 +1,6 @@
 import React from 'react';
-import { Heart, Handshake } from 'lucide-react';
+import { Heart, Handshake, MapPin, Phone, Clock, Award, Link as LinkIcon } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const About: React.FC = () => {
   return (
@@ -21,32 +22,151 @@ const About: React.FC = () => {
                 <Heart className="w-12 h-12 text-yellow-400" />
               </div>
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
-                Searching for a reputable flooring, surfaces coatings contractor with a proven track record, then ABS is the contractor for you.
-              </p>
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
-                Based out of Phoenix, AZ and serving a wide range of multi faceted commercial and private clients across the Southwestern United States, Flooring Team is a trusted turnkey flooring and wall solution contractor with over 100 years of combined industry experience. There is no project or installation too big, complex or technical, and if it has never been done before, we will be sure to formulate a resolution that will be backed by our installation warranty. Our extensive background in unique and highly difficult installations, whether horizontal or vertical, now serves as a manifold of experience comprising of all the skill sets and industry know how needed, to bring your vision to life. Whether it be in the Public, Federal, Military, Private or Industrial sector, we have the familiarity that comes with the pressures of fast track, high pressure, and critical path installations all the while sustaining a level of quality typical to even the most discriminative of clients.
+                Flooring Team LLC has design experts on hand waiting to help you determine your next steps in the buying experience. From high-end to the budget conscious buyer, we have products to help meet all of your needs. We pride ourselves in taking good care of our customers. Come see us where we will treat you like part of the community.
               </p>
             </div>
           </div>
 
-          {/* Why Choose Us Section */}
+          {/* Excellent Relationships with Suppliers */}
           <div className="bg-white rounded-2xl p-8 md:p-12 mb-12 max-w-4xl mx-auto border-2 border-blue-200 shadow-lg">
             <div className="text-center mb-8">
               <div className="bg-blue-900 rounded-full p-4 shadow-xl inline-flex mb-4">
                 <Handshake className="w-8 h-8 text-yellow-400" />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Why Choose Us?
+                Excellent Relationships with Suppliers
+              </h2>
+            </div>
+
+            <div className="text-left">
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Flooring Team LLC has design experts on hand waiting to help you determine your next steps in the buying experience. From high-end to the budget conscious buyer, we have products to help meet all of your needs. We pride ourselves in taking good care of our customers. Come see us where we will treat you like part of the community.
+              </p>
+            </div>
+          </div>
+
+          {/* Awards & Associations */}
+          <div className="bg-gradient-to-br from-blue-50 to-yellow-50 rounded-2xl p-8 md:p-12 mb-12 max-w-4xl mx-auto border-2 border-blue-200 shadow-lg">
+            <div className="text-center mb-8">
+              <div className="bg-blue-900 rounded-full p-4 shadow-xl inline-flex mb-4">
+                <Award className="w-8 h-8 text-yellow-400" />
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Awards & Associations
               </h2>
             </div>
 
             <div className="text-left">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Commercial organizations, construction and renovation contractors, housing management agencies, and homeowners throughout Phoenix, Dallas, El Paso, Denver, Las Vegas, and beyond have relied on the superior flooring selection and attention to detail at ABS that's difficult to achieve anywhere else. With an extensive flooring showroom in Phoenix and onsite surfacing and coatings installation services, we offer the complete flooring solution that's right for your business or home, regardless of property size, style, or project scope.
+                We're proud members of the <strong>World Floor Covering Association</strong>, demonstrating our commitment to industry excellence and staying at the forefront of flooring trends and best practices.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Flooring Team is a hardwood flooring contractor specializing in floor installation, hardwood floor restoration, polished & stained concrete, and more, serving Tempe, Scottsdale, Chandler, Mesa, Gilbert, Ahwatukee, Glendale, and the surrounding Phoenix AZ region.
-              </p>
+              
+              {/* Award Image */}
+              <div className="flex justify-center mt-6">
+                <img 
+                  src="/flooringteamaward.jpeg" 
+                  alt="Flooring Team Award" 
+                  className="max-w-md w-full h-auto object-contain rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Store Info */}
+          <div className="bg-white rounded-2xl p-8 md:p-12 mb-12 max-w-4xl mx-auto border-2 border-blue-200 shadow-lg">
+            <div className="text-center mb-8">
+              <div className="bg-blue-900 rounded-full p-4 shadow-xl inline-flex mb-4">
+                <MapPin className="w-8 h-8 text-yellow-400" />
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Store Information
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+              <div>
+                <div className="flex items-start mb-4">
+                  <MapPin className="w-6 h-6 text-blue-900 mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-2">Address</h3>
+                    <p className="text-gray-700">
+                      2048 N 16th St<br />
+                      Phoenix, AZ 85006
+                    </p>
+                    <a 
+                      href="https://maps.google.com/?q=2048+N+16th+St+Phoenix+AZ+85006" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue-900 hover:underline mt-2 inline-block"
+                    >
+                      Get directions →
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start mb-4">
+                  <Phone className="w-6 h-6 text-blue-900 mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-2">Phone</h3>
+                    <a href="tel:6025825827" className="text-gray-700 hover:text-blue-900">
+                      (602) 582-5827
+                    </a>
+                    <p className="text-sm text-gray-600 mt-1">
+                      <a href="tel:6025825827" className="text-blue-900 hover:underline">
+                        Call us →
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <Clock className="w-6 h-6 text-blue-900 mr-3 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-2">Hours</h3>
+                    <p className="text-gray-700">
+                      Mon-Fri: 7am - 6pm<br />
+                      Sat: 7am - 5pm<br />
+                      Sun: Closed
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-center">
+                <Link 
+                  to="/contact"
+                  className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-4 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg text-center w-full"
+                >
+                  Request a Free Estimate
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Featured Brands & Technologies */}
+          <div className="bg-gradient-to-br from-blue-50 to-yellow-50 rounded-2xl p-8 md:p-12 mb-12 max-w-4xl mx-auto border-2 border-blue-200 shadow-lg">
+            <div className="text-center mb-8">
+              <div className="bg-blue-900 rounded-full p-4 shadow-xl inline-flex mb-4">
+                <LinkIcon className="w-8 h-8 text-yellow-400" />
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Featured Brands & Technologies
+              </h2>
+            </div>
+
+            <div className="text-left">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
+                <div>• Phenix flooring in Tempe, AZ from Flooring Team LLC</div>
+                <div>• Shaw Floors flooring in Phoenix, AZ from Flooring Team LLC</div>
+                <div>• American Olean flooring in Scottsdale, AZ from Flooring Team LLC</div>
+                <div>• Dal Tile flooring in Gilbert, AZ from Flooring Team LLC</div>
+                <div>• Marazzi Tile flooring in Mesa, AZ from Flooring Team LLC</div>
+                <div>• MSI flooring in Prescott, AZ from Flooring Team LLC</div>
+                <div>• Eternity Floors flooring in Tempe, AZ from Flooring Team LLC</div>
+                <div>• Inhaus flooring in Phoenix, AZ from Flooring Team LLC</div>
+                <div>• Kronotex flooring in Scottsdale, AZ from Flooring Team LLC</div>
+                <div>• COREtec flooring in Tempe, AZ from Flooring Team LLC</div>
+              </div>
             </div>
           </div>
 

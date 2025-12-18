@@ -137,29 +137,29 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
                   </div>
                   <div className="flex-1">
                     <h4 className="font-bold text-gray-900 mb-1 group-hover:text-blue-900 transition-colors">Phone</h4>
-                    <p className="text-gray-700 font-semibold text-lg">602-415-1919</p>
+                    <p className="text-gray-700 font-semibold text-lg">(602) 582-5827</p>
                   </div>
                 </a>
 
-                <a href="mailto:info@absflooring.com" className="group flex items-start p-4 rounded-xl hover:bg-blue-50 transition-all duration-300 border border-transparent hover:border-blue-100">
+                <a href="mailto:flooringteamaz@gmail.com" className="group flex items-start p-4 rounded-xl hover:bg-blue-50 transition-all duration-300 border border-transparent hover:border-blue-100">
                   <div className="bg-gradient-to-br from-blue-900 to-blue-800 p-4 rounded-xl mr-4 group-hover:scale-110 transition-transform shadow-md flex-shrink-0">
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h4 className="font-bold text-gray-900 mb-1 group-hover:text-blue-900 transition-colors">Email</h4>
-                    <p className="text-gray-700 font-semibold break-words text-sm sm:text-base">info@absflooring.com</p>
+                    <p className="text-gray-700 font-semibold break-words text-sm sm:text-base">flooringteamaz@gmail.com</p>
                     <p className="text-sm text-gray-500 mt-1">We respond within 24 hours</p>
                   </div>
                 </a>
 
-                <a href="https://maps.google.com/?q=1430+N+29th+Ave,+Phoenix,+AZ+85009" target="_blank" rel="noopener noreferrer" className="group flex items-start p-4 rounded-xl hover:bg-blue-50 transition-all duration-300 border border-transparent hover:border-blue-100">
+                <a href="https://maps.google.com/?q=2048+N+16th+St+Phoenix+AZ+85006" target="_blank" rel="noopener noreferrer" className="group flex items-start p-4 rounded-xl hover:bg-blue-50 transition-all duration-300 border border-transparent hover:border-blue-100">
                   <div className="bg-gradient-to-br from-blue-900 to-blue-800 p-4 rounded-xl mr-4 group-hover:scale-110 transition-transform shadow-md">
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1">
                     <h4 className="font-bold text-gray-900 mb-1 group-hover:text-blue-900 transition-colors">Address</h4>
-                    <p className="text-gray-700 font-semibold">1430 N 29th Ave</p>
-                    <p className="text-gray-700 font-semibold">Phoenix, AZ 85009</p>
+                    <p className="text-gray-700 font-semibold">2048 N 16th St</p>
+                    <p className="text-gray-700 font-semibold">Phoenix, AZ 85006</p>
                     <p className="text-sm text-blue-900 mt-1 font-semibold group-hover:underline">
                       Get Directions →
                     </p>
@@ -318,27 +318,30 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
             <div className="space-y-4">
               <div className="flex justify-between items-center py-3 border-b border-gray-100">
                 <span className="font-semibold text-gray-900">Mon</span>
-                <span className="text-gray-600">09:00 am – 05:00 pm</span>
+                <span className="text-gray-600">7:00 am – 6:00 pm</span>
               </div>
               <div className="flex justify-between items-center py-3 border-b border-gray-100">
                 <span className="font-semibold text-gray-900">Tue</span>
-                <span className="text-gray-600">09:00 am – 05:00 pm</span>
+                <span className="text-gray-600">7:00 am – 6:00 pm</span>
               </div>
               <div className="flex justify-between items-center py-3 border-b border-gray-100">
-                <span className="font-semibold text-gray-900">Wed</span>
-                <span className="text-gray-600">09:00 am – 05:00 pm</span>
+                <div>
+                  <span className="font-semibold text-gray-900">Wed</span>
+                  <span className="text-xs text-gray-500 block mt-1">(Hours might differ)</span>
+                </div>
+                <span className="text-gray-600">7:00 am – 6:00 pm</span>
               </div>
               <div className="flex justify-between items-center py-3 border-b border-gray-100">
                 <span className="font-semibold text-gray-900">Thu</span>
-                <span className="text-gray-600">09:00 am – 05:00 pm</span>
+                <span className="text-gray-600">7:00 am – 6:00 pm</span>
               </div>
               <div className="flex justify-between items-center py-3 border-b border-gray-100">
                 <span className="font-semibold text-gray-900">Fri</span>
-                <span className="text-gray-600">09:00 am – 05:00 pm</span>
+                <span className="text-gray-600">7:00 am – 6:00 pm</span>
               </div>
               <div className="flex justify-between items-center py-3 border-b border-gray-100">
                 <span className="font-semibold text-gray-900">Sat</span>
-                <span className="text-gray-600">08:00 am – 12:00 pm</span>
+                <span className="text-gray-600">7:00 am – 5:00 pm</span>
               </div>
               <div className="flex justify-between items-center py-3">
                 <span className="font-semibold text-gray-900">Sun</span>
@@ -356,15 +359,15 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
             </div>
             <div className="space-y-4">
               <div>
-                <p className="text-gray-900 font-semibold">1430 N 29th Ave</p>
-                <p className="text-gray-900 font-semibold">Phoenix, AZ 85009</p>
+                <p className="text-gray-900 font-semibold">2048 N 16th St</p>
+                <p className="text-gray-900 font-semibold">Phoenix, AZ 85006</p>
               </div>
               <div className="pt-4 border-t border-gray-100">
                 <p className="text-gray-600 mb-4">
                   Visit our showroom to see our full selection of flooring samples and get expert advice from our team.
                 </p>
                 <a 
-                  href="https://maps.google.com/?q=1430+N+29th+Ave,+Phoenix,+AZ+85009"
+                  href="https://maps.google.com/?q=2048+N+16th+St+Phoenix+AZ+85006"
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-block bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-xl transition-all"
@@ -424,7 +427,7 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
                   Call us directly for urgent questions or to speak with a flooring specialist right away.
                 </p>
                 <a href="tel:16024151919" className="bg-white text-blue-900 hover:bg-gray-100 font-bold py-2 px-6 rounded-lg transition-all inline-block">
-                  602-415-1919
+                  (602) 582-5827
                 </a>
               </div>
             </div>

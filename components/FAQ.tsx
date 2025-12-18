@@ -218,7 +218,7 @@ const FAQ: React.FC = () => {
               href="tel:16024151919"
               className="border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white font-bold py-4 px-8 rounded-xl transition-all inline-flex items-center justify-center gap-2"
             >
-              Call 602-415-1919
+              Call (602) 582-5827
             </a>
           </div>
         </div>
