@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Mail, Phone, MapPin, ChevronDown, Clock, Facebook, Instagram, Twitter, Youtube, Calendar, Users } from 'lucide-react';
+import { Send, Mail, Phone, MapPin, ChevronDown, Clock, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 
 interface ContactProps {
   simplified?: boolean;
@@ -112,11 +112,11 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
         <div className="text-center mb-20">
           <span className="text-blue-900 font-bold tracking-wider text-sm uppercase">GET IN TOUCH</span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-5">
-            Better yet, see us in person!
+            Get Your Project Started Today
           </h2>
           <div className="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            We stay in constant communication with our customers until the job is done. To get a free quote, or if you have questions or special requests, just drop us a line.
+            Fill out the form below and we'll get back to you quickly to help bring your flooring vision to life. Fast, professional service from start to finish.
           </p>
         </div>
 
@@ -378,59 +378,6 @@ const Contact: React.FC<ContactProps> = ({ simplified = false }) => {
             </div>
           </div>
         </div>
-
-            {/* Social Media & Additional Info */}
-            <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-8 text-white text-center">
-                <div className="bg-white bg-opacity-20 p-4 rounded-full inline-flex mb-4">
-                  <Calendar className="w-8 h-8" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Schedule a Consultation</h3>
-                <p className="text-blue-100 mb-4 text-sm">
-                  Book a free in-home consultation to see samples in your space and get expert recommendations.
-                </p>
-                <button className="bg-white text-blue-900 hover:bg-gray-100 font-bold py-2 px-6 rounded-lg transition-all">
-                  Book Now
-                </button>
-              </div>
-
-              <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-8 text-white text-center">
-                <div className="bg-white bg-opacity-20 p-4 rounded-full inline-flex mb-4">
-                  <Users className="w-8 h-8" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Join Our Community</h3>
-                <p className="text-blue-100 mb-4 text-sm">
-                  Follow us on social media for design inspiration, special offers, and flooring tips.
-                </p>
-                <div className="flex justify-center gap-3">
-                  <a href="https://www.facebook.com/indianabestflooring/" target="_blank" rel="noopener noreferrer" className="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all">
-                    <Facebook className="w-5 h-5" />
-                  </a>
-                  <a href="#" className="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all">
-                    <Instagram className="w-5 h-5" />
-                  </a>
-                  <a href="#" className="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all">
-                    <Twitter className="w-5 h-5" />
-                  </a>
-                  <a href="#" className="bg-white bg-opacity-20 hover:bg-opacity-30 p-2 rounded-lg transition-all">
-                    <Youtube className="w-5 h-5" />
-                  </a>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-8 text-white text-center">
-                <div className="bg-white bg-opacity-20 p-4 rounded-full inline-flex mb-4">
-                  <Phone className="w-8 h-8" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Need Immediate Help?</h3>
-                <p className="text-blue-100 mb-4 text-sm">
-                  Call us directly for urgent questions or to speak with a flooring specialist right away.
-                </p>
-                <a href="tel:16024151919" className="bg-white text-blue-900 hover:bg-gray-100 font-bold py-2 px-6 rounded-lg transition-all inline-block">
-                  (602) 582-5827
-                </a>
-              </div>
-            </div>
           </>
         )}
 
